@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Анна Сухопарова](https://htmlacademy.ru/profile/id35902).
-* Наставник: `Неизвестно`.
+* Студент: [Анна Сухопарова](https://htmlacademy.ru/profile/id35902) [vk](http://vk.com/like_orange).
+* Наставник: [Андрей Кованов](https://htmlacademy.ru/profile/id63294).
 
 ---
 
