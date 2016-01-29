@@ -11,7 +11,6 @@
         <a class="index-logo" href="#">
           <img src="img/index-logo.png" width="138" height="70" alt="SEDONA LOGO">
         </a>
-        </div>
         <nav class="main-navigation">
           <ul>
             <li class="to-left"><a href="#">Информация</a></li>
@@ -20,32 +19,28 @@
             <li class="to-right"><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
+      </div>
     </header>
     <main class="container inner-container">
       <div class="filter">
-        <section class="hotels-filter">
-          <b>Инфраструктура:</b>
-          <form action="#">
+        <form action="#">
+          <section class="hotels-filter">
+            <b>Инфраструктура:</b>
             <input type="checkbox" name="pool" id="id-pool" checked>
             <label for="id-pool">Бассейн</label>
             <input type="checkbox" name="parking" id="id-parking">
             <label for="id-parking">Парковка</label>
             <input type="checkbox" name="wifi" id="id-wifi">
             <label for="id-wifi">WI-FI</label>
-          </form>
-        </section>
-        <section class="hotels-filter">
-          <b>Тип жилья:</b>
-          <form action="#">
+            <b>Тип жилья:</b>
             <input type="checkbox" name="hotel" id="id-hotel" checked>
             <label for="id-hotel">Гостиница</label>
             <input type="checkbox" name="motel" id="id-motel" checked>
             <label for="id-motel">Мотель</label>
             <input type="checkbox" name="apartments" id="id-apartments" checked>
             <label for="id-apartments">Апартаменты</label>
-          </form>
-        </section>
-        <section class="prices">
+          </section>
+          <section class="prices">
           <b>Стоимость в сутки (Р):</b>
           <table class="table-prices">
             <tr>
@@ -53,26 +48,17 @@
               <td>До 3000</td>
             </tr>
           </table>
-          <form action="#">
-            <input type="range" name="price" id="id-price">
-          </form>
+          <input type="range" name="price" id="id-price">
           <button class="btn-show" type="submit">Показать</button>
-        </section>
+          </section>
+        </form>
       </div>
       <div class="sorting">
         <span>Найдено: 3</span>
-        <div class="sort-kinds">
           <b>Сортировка:</b>
-        </div>
-        <div class="sort-kinds sorting-active">
           <a href="#">По цене</a>
-        </div>
-        <div class="sort-kinds sorting-inactive">
           <a href="#">По типу</a>
-        </div>
-        <div class="sort-kinds sorting-inactive">
           <a href="#">По рейтингу</a>
-        </div>
         <div class="icon-sort">
           <a href="#">▲</a>
           <a href="#">▼</a>
@@ -91,10 +77,8 @@
             <a class="hotels-btn reserve" href="#">Забронировать</a>
           </div>
           <div class="rating">
-            ★★★★
-            <div class="rating-value">
-              Рейтинг: 8,5
-            </div>
+            <div class="stars">★★★★</div>
+            <div class="rating-value">Рейтинг: 8,5</div>
           </div>
         </div>
       </article>
@@ -111,10 +95,8 @@
               <a class="hotels-btn reserve" href="#">Забронировать</a>
           </div>
           <div class="rating">
-            ★★
-            <div class="rating-value">
-              Рейтинг: 8,9
-            </div>
+            <div class="stars">★★</div>
+            <div class="rating-value">Рейтинг: 8,9</div>
           </div>
         </div>
       </article>
@@ -131,10 +113,8 @@
               <a class="hotels-btn reserve" href="#">Забронировать</a>
           </div>
           <div class="rating">
-            ★★★
-            <div class="rating-value">
-              Рейтинг: 9,2
-            </div>
+            <div class="stars">★★★</div>
+            <div class="rating-value">Рейтинг: 9,2</div>
           </div>
         </div>
       </article>
@@ -150,8 +130,7 @@
           <a class="social-btn social-btn-yt" href="#"></a>
         </section>
         <section class="footer-copyright">
-          <a href="https://htmlacademy.ru">
-            <img src="img/academy.jpg" width="195" height="39" alt="website by html academy"></a>
+          <a href="https://htmlacademy.ru">WEBSITE BY</a>
         </section>
       </div>
     </footer>
