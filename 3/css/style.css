@@ -1,0 +1,167 @@
+body{
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: normal;
+  font-family: "PTSans", "Arial", sans-serif;
+}
+
+h2{
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PTSans", "Arial", sans-serif;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 1200px;
+  /*padding: 0 10px;*/
+  margin: 0 auto;
+  background-color: #8be994;
+}
+
+.index-logo{
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  margin-left: 531px;
+}
+
+.main-navigation{
+  min-height: 56px;
+  padding:0 6%;
+}
+
+.to-left{
+  float: left;
+  width: 20%;
+}
+
+.to-right{
+  float: right;
+  width: 20%;
+}
+
+.main-img{
+  width: 100%;
+  min-height: 511px;
+  background-color: #def754;
+  /*background-image: url("img/bg-index.jpg");*/
+}
+
+.main-img img{
+  width: 458px;
+  height: 352px;
+  margin-left: 371px;
+  margin-top: 77px;
+}
+
+.description{
+  width: 100%;
+  padding-top: 61px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #d98ce0;
+}
+
+.reasons-image{
+  float: left;
+  width: auto;
+  margin-right: 0;
+  height: 256px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.city-photos{
+  float: left;
+  width: 66%;
+  width: 800px;
+  margin-right: 0;
+  max-height: 256px;
+}
+
+.reasons-text{
+  font-size: 0;
+  width: 100%;
+}
+
+.feature-item{
+  display: inline-block;
+  font-size: 14px;
+  width: 400px;
+  vertical-align: top;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.reasons{
+  display: inline-block;
+  font-size: 14px;
+  width: 400px;
+  vertical-align: top;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.search{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #edcaf6;
+}
+
+.search-form{
+  width: 568px;
+  position:absolute;
+  left: 50%;
+  /*display: none;*/
+}
+
+.map{
+  width: 1200px;
+  height: 593px;
+}
+
+.main-footer{
+  width: 100%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #eeec4e;
+}
+
+.footer-tag{
+  float: left;
+  width: 400px;
+  text-align: center;
+}
+
+.footer-social{
+  float:left;
+  width: 400px;
+  text-align: center;
+}
+
+.footer-copyright{
+  float:left;
+  width: 400px;
+}
+
+.social-btn{
+  display: inline-block;
+  font-size: 0;
+  width: 46px;
+  height: 48px;
+  margin: 0 6px;
+  vertical-align: top;
+  text-decoration: none;
+  background-color: #81b3d2;
+  background-position: center;
+}
