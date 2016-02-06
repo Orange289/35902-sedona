@@ -4,6 +4,7 @@ body{
   color: #333333;
   font-weight: normal;
   font-family: "PTSans", "Arial", sans-serif;
+  background-color: #f2f2f2;
 }
 
 h2{
@@ -20,6 +21,10 @@ h2{
   clear: both;
 }
 
+.main-header{
+  position: relative;;
+}
+
 .container{
   width: 1200px;
   /*padding: 0 10px;*/
@@ -31,7 +36,8 @@ h2{
   width: 138px;
   height: 70px;
   position: absolute;
-  margin-left: 531px;
+  left: 50%;
+  margin-left: -69px;
 }
 
 .main-navigation{
@@ -41,56 +47,89 @@ h2{
 
 .to-left{
   float: left;
-  width: 20%;
+  width: 240px;
+  text-align: left;
 }
 
 .to-right{
   float: right;
-  width: 20%;
+  width: 240px;
+  text-align: right;
 }
 
 .main-img{
-  width: 100%;
-  min-height: 511px;
-  background-color: #def754;
-  /*background-image: url("img/bg-index.jpg");*/
+  padding-top: 77px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: #b18069 url("../img/bg-index.jpg") no-repeat;
+  /*background: url("../img/bg-mask.jpg");*/
 }
 
 .main-img img{
-  width: 458px;
-  height: 352px;
-  margin-left: 371px;
-  margin-top: 77px;
+  max-width: 458px;
+  height: auto;
 }
 
 .description{
-  width: 100%;
   padding-top: 61px;
   padding-bottom: 50px;
   text-align: center;
   background-color: #d98ce0;
 }
 
-.reasons-image{
+.reasons-image:nth-child(1){
   float: left;
-  width: auto;
-  margin-right: 0;
-  height: 256px;
+  width: 34%;
+  padding-top: 57px;
   text-align: center;
   background-color: #81b3d2;
 }
 
-.city-photos{
-  float: left;
+.reasons-image .reasons-header{
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.reasons-image .reasons-num{
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.reasons-image p{
+  margin-right: 60px;
+  margin-left: 60px;
+  color: #ffffff;
+}
+
+.city-photos:nth-child(1){
   width: 66%;
-  width: 800px;
-  margin-right: 0;
-  max-height: 256px;
+  float: right;
+}
+
+
+.city-photos:nth-child(2){
+  width: 66%;
+  float: left;
+}
+
+.reasons-image:nth-child(2){
+  float: right;
+  width: 34%;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.city-photos img{
+  max-width: 800px;
+  height: auto;
 }
 
 .reasons-text{
   font-size: 0;
-  width: 100%;
 }
 
 .feature-item{
@@ -112,7 +151,6 @@ h2{
 }
 
 .search{
-  width: 100%;
   position: relative;
   text-align: center;
   background-color: #edcaf6;
@@ -122,16 +160,16 @@ h2{
   width: 568px;
   position:absolute;
   left: 50%;
+  margin-left: -284px;
   /*display: none;*/
 }
 
-.map{
-  width: 1200px;
-  height: 593px;
+.map img{
+  width: 100%;
+  height: auto;
 }
 
 .main-footer{
-  width: 100%;
   padding-top: 36px;
   padding-bottom: 36px;
   background-color: #eeec4e;
@@ -152,6 +190,7 @@ h2{
 .footer-copyright{
   float:left;
   width: 400px;
+  text-align: center;
 }
 
 .social-btn{
