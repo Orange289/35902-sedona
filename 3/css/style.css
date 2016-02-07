@@ -61,8 +61,9 @@ h2{
   padding-top: 77px;
   padding-bottom: 80px;
   text-align: center;
-  background: #b18069 url("../img/bg-index.jpg") no-repeat;
-  /*background: url("../img/bg-mask.jpg");*/
+  background-color: #b18069;
+  background: url("../img/bg-mask.png") no-repeat, url("../img/bg-index.jpg") no-repeat;
+  background-position: 0 460px, 0 -60px;
 }
 
 .main-img img{
@@ -77,50 +78,39 @@ h2{
   background-color: #d98ce0;
 }
 
-.reasons-image:nth-child(1){
+.reasons-image{
   float: left;
   width: 34%;
-  padding-top: 57px;
+  /*padding-top: 57px;
+  padding-bottom: 57px;*/
   text-align: center;
   background-color: #81b3d2;
 }
 
 .reasons-image .reasons-header{
+  margin-top:57px;
   margin-left: 140px;
   margin-right: 140px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   color: #ffffff;
 }
 
 .reasons-image .reasons-num{
-  margin-bottom: 30px;
+  margin-top: 30px;
   color: #ffffff;
 }
 
 .reasons-image p{
-  margin-right: 60px;
+  margin-top: 30px;
   margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 57px;
   color: #ffffff;
 }
 
-.city-photos:nth-child(1){
-  width: 66%;
-  float: right;
-}
-
-
-.city-photos:nth-child(2){
+.city-photos{
   width: 66%;
   float: left;
-}
-
-.reasons-image:nth-child(2){
-  float: right;
-  width: 34%;
-  padding-top: 57px;
-  padding-bottom: 57px;
-  text-align: center;
-  background-color: #81b3d2;
 }
 
 .city-photos img{
@@ -130,15 +120,6 @@ h2{
 
 .reasons-text{
   font-size: 0;
-}
-
-.feature-item{
-  display: inline-block;
-  font-size: 14px;
-  width: 400px;
-  vertical-align: top;
-  text-align: center;
-  background-color: #ffffff;
 }
 
 .reasons{
