@@ -13,6 +13,7 @@ h2{
   color: #000000;
   font-weight: bold;
   font-family: "PTSans", "Arial", sans-serif;
+  margin: 0 auto;
 }
 
 .clearfix::after{
@@ -171,6 +172,10 @@ h2{
   /*display: none;*/
 }
 
+.map{
+  line-height: 0;
+}
+
 .map img{
   width: 100%;
   height: auto;
@@ -212,6 +217,8 @@ h2{
   background-position: center;
 }
 
+/* ------------------------------- inner.html--------------------------------*/
+
 .inner-container{
   width: 1054px;
   margin: 0 auto;
@@ -224,14 +231,24 @@ h2{
   background-image: url("")
 }
 
-.filter form{
-
+.hotels-filter{
+  float: left;
+  width: 50%;
+  font-size: 0;
 }
 
 .filter-item{
-  width: 241px;
-  float:left;
-  background-color: #e493f5;
+  /*width: 23%;
+  float:left;*/
+  display:inline-block;
+  vertical-align: top;
+  padding-right: 10%;
+  font-size: 14px;
+  background-color: #8b86e7;
+}
+
+.filter-header{
+  font-size: 16px;
 }
 
 .filter-item div{
@@ -239,7 +256,89 @@ h2{
 }
 
 .prices{
-  width: 328px;
+  width: 50%;
   float: right;
   background-color: #e493f5;
+}
+
+.btn-show{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.sorting{
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #e9b12b;
+}
+
+.result-sorting{
+  float: left;
+  width: 50%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #e88282;
+}
+
+.icon-sort{
+  float: right;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.sorting span{
+  font-size: 21px;
+  /*margin-right: 50px;*/
+}
+
+.sorting b{
+/*  margin-right: 40px;*/
+}
+
+.sorting a{
+  /*margin-right: 40px;*/
+}
+
+.hotels-item{
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.hotels-img{
+  float:left;
+  width: 135px;
+  height: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fbadce;
+}
+
+.hotels-details{
+   float:left;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: 31px;
+   font-size: 0;
+}
+
+.stars{
+  line-height: 0;
+  margin-bottom: 48px;
+}
+
+.rating{
+  float: right;
+  margin-top: 30px;
+}
+
+.hotels-about{
+  display: inline-block;
+  vertical-align: top;
+  width: 110px;
+  font-size: 14px;
+}
+
+.hotels-reserve{
+  display: inline-block;
+  vertical-align: top;
+  width: 141px;
+  font-size: 14px;
 }
