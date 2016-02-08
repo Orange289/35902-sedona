@@ -1,7 +1,7 @@
 body{
   font-size: 14px;
   line-height: 26px;
-  color: #333333;
+  color: #000000;
   font-weight: normal;
   font-family: "PTSans", "Arial", sans-serif;
   background-color: #f2f2f2;
@@ -61,13 +61,11 @@ h2{
   padding-top: 77px;
   padding-bottom: 80px;
   text-align: center;
-  background-color: #b18069;
-  background: url("../img/bg-mask.png") no-repeat, url("../img/bg-index.jpg") no-repeat;
-  background-position: 0 460px, 0 -60px;
+  background: url("../img/bg-mask.png") 0 100% no-repeat, url("../img/bg-index.jpg") 0 22% no-repeat #986a73;
 }
 
 .main-img img{
-  max-width: 458px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -80,41 +78,69 @@ h2{
 
 .reasons-image{
   float: left;
-  width: 34%;
-  /*padding-top: 57px;
-  padding-bottom: 57px;*/
+  width: 408px;
   text-align: center;
   background-color: #81b3d2;
 }
 
 .reasons-image .reasons-header{
-  margin-top:57px;
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-bottom: 0;
+  font-size:21px;
+  margin-top: 57px;
+  margin-left: 135px;
+  margin-right: 135px;
   color: #ffffff;
 }
 
 .reasons-image .reasons-num{
-  margin-top: 30px;
+  margin-top: 7px;
   color: #ffffff;
 }
 
 .reasons-image p{
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-top: 7px;
+  /*margin-left: 100px;
+  margin-right: 100px;*/
   margin-bottom: 57px;
   color: #ffffff;
 }
 
+.reasons .reasons-header{
+  font-size:21px;
+  margin-left: 135px;
+  margin-right: 135px;
+}
+
+.reasons .reasons-header{
+  font-size:21px;
+  margin-left: 135px;
+  margin-right: 135px;
+}
+
+.reasons .reasons-num{
+  margin-top: 7px;
+}
+
+.reasons p{
+  margin-top: 7px;
+  margin-left: 58px;
+  margin-right: 58px;
+  margin-bottom: 57px;
+}
+
+.without-num p{
+  margin-top: 7px;
+  margin-left: 58px;
+  margin-right: 58px;
+  margin-bottom: 88px;
+}
+
 .city-photos{
-  width: 66%;
+  width: 792px;
   float: left;
 }
 
 .city-photos img{
-  max-width: 800px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -184,4 +210,36 @@ h2{
   text-decoration: none;
   background-color: #81b3d2;
   background-position: center;
+}
+
+.inner-container{
+  width: 1054px;
+  margin: 0 auto;
+  background-color: #acf6f3;
+}
+
+.filter{
+  padding-top: 10px;
+  background-color: #685956;
+  background-image: url("")
+}
+
+.filter form{
+
+}
+
+.filter-item{
+  width: 241px;
+  float:left;
+  background-color: #e493f5;
+}
+
+.filter-item div{
+  margin-bottom: 9px;
+}
+
+.prices{
+  width: 328px;
+  float: right;
+  background-color: #e493f5;
 }
