@@ -10,24 +10,24 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <a class="index-logo" href="#">
-            <img src="img/index-logo.png" width="138" height="70" alt="SEDONA LOGO">
+        <a class="index-logo" href="index.html">
+          <img src="img/index-logo.png" width="138" height="70" alt="SEDONA LOGO">
         </a>
         <nav class="main-navigation clearfix">
-            <ul>
-              <li class="to-left"><a href="#">Информация</a></li>
-              <li class="to-left"><a href="#">Фото и видео</a></li>
-              <li class="to-right"><a href="#">Гостиницы</a></li>
-              <li class="to-right"><a href="#">Карта штата</a></li>
-            </ul>
+          <ul>
+            <li class="to-left"><a href="#link-description">Информация</a></li>
+            <li class="to-left"><a href="#">Фото и видео</a></li>
+            <li class="to-right"><a href="inner.html">Гостиницы</a></li>
+            <li class="to-right"><a href="#link-map">Карта штата</a></li>
+          </ul>
         </nav>
       </header>
       <main class="main-index">
         <div class="main-img">
           <img src="img/img-content.png" width="458" height="352" alt="Добро пожаловать в Седону">
         </div>
-        <div class="description">
-          <b>Cедона - Небольшой городок в Аризоне, заслуживающий большего!</b>
+        <div class="description" id="link-description">
+          <b>Cедона – Небольшой городок в Аризоне, заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <section class="reasons-with-photo clearfix">
@@ -88,38 +88,46 @@
           <a class="btn open-search" href="#">Поиск гостиницы в Седоне</a>
           <div class="search-form">
             <form action="#">
-              <label for="ar-date">Дата заезда:</label>
-              <input class="input-date" type="text" name="arrival-date" id="ar-date" placeholder="24 апреля 2016">
-              <a class="icon-calendar" href="#">calendar</a>
-              <label for="dep-date">Дата выезда:</label>
-              <input class="input-date" type="text" name="departure-date" id="dep-date" placeholder="4 июля 2016">
-              <a class="icon-calendar" href="#">calendar</a>
-              <a class="icon-qty" href="#"></a>
-              <label for="ad-qty">Взрослые:</label>
-              <input class="input-qty" type="text" name="adults-qty" id="ad-qty" placeholder="2">
-              <a class="icon-qty" href="#"></a>
-              <a class="icon-qty" href="#"></a>
-              <label for="k-qty">Дети:</label>
-              <input class="input-qty" type="text" name="kids-qty" id="k-qty" placeholder="0">
-              <a class="icon-qty" href="#"></a>
+              <div class="date">
+                <label for="ar-date">Дата заезда:</label>
+                <input class="input-date" type="text" name="arrival-date" id="ar-date" value="24 апреля 2016">
+                <span class="icon-calendar" href="#">calendar</span>
+              </div>
+              <div class="date">
+                <label for="dep-date">Дата выезда:</label>
+                <input class="input-date" type="text" name="departure-date" id="dep-date" value="4 июля 2016">
+                <span class="icon-calendar" href="#">calendar</span>
+              </div>
+              <div class="qty">
+                <span class="icon-minus" href="#">-</span>
+                <label for="ad-qty">Взрослые:</label>
+                <input class="input-qty" type="text" name="adults-qty" id="ad-qty" value="2" pattern="[0-9]{2}">
+                <span class="icon-plus" href="#">+</span>
+              </div>
+              <div class="qty">
+                <span class="icon-minus icon-minus-k" href="#">-</span>
+                <label for="k-qty">Дети:</label>
+                <input class="input-qty" type="text" name="kids-qty" id="k-qty" value="0">
+                <span class="icon-plus" href="#">+</span>
+              </div>
               <button class="btn btn-search" type="submit">Найти</button>
             </form>
           </div>
         </section>
-        <section class="map">
+        <section class="map" id="link-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7785.76395108213!2d-111.76281520052218!3d34.86852678761492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1455216001819" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </main>
-      <footer class="main-footer clearfix">
+      <footer class="main-footer transp-footer clearfix">
         <section class="footer-tag">#VISITSEDONA</section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">twitter</a>
-          <a class="social-btn social-btn-fb" href="#">facebook</a>
-          <a class="social-btn social-btn-yt" href="#">youtube</a>
+          <a class="social-btn social-btn-tw" href="https://twitter.com/cityofsedonaaz">twitter</a>
+          <a class="social-btn social-btn-fb" href="https://www.facebook.com/VisitSedona">facebook</a>
+          <a class="social-btn social-btn-yt" href="https://www.youtube.com/watch?v=qC3dwQ58w6E">youtube</a>
         </section>
         <section class="footer-copyright">
           <span>WEBSITE BY</span>
-            <a class="academy" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="academy" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </footer>
     </div>
