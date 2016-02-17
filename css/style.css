@@ -109,7 +109,7 @@ height: auto;
 
 .main-img{
   padding-top: 77px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   text-align: center;
   background: url("../img/bg-mask.png") 0 100% no-repeat, url("../img/bg-index.jpg") 0 22% no-repeat #daeaf3;
 }
@@ -126,17 +126,17 @@ height: auto;
   font-size: 21px;
   margin-left: 294px;
   margin-right: 294px;
-  margin-bottom: 37px;
+  margin-bottom: 28px;
 }
 
 .description p{
-  margin-top: 0;
+  margin: 0;
 }
 
 /*заголовки причин*/
 
 .reasons-header{
-  font-size:21px;
+  font-size: 21px;
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 23px;
@@ -338,11 +338,12 @@ height: auto;
 }
 
 .open-search:hover{
-  background-color: #766357;
+  background-color: #604e43;
 }
 
 .open-search:active{
-  color: #ffffff;
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-form{
@@ -377,7 +378,7 @@ label{
 }
 
 label[for="ad-qty"]{
-  margin-right: 36px;
+  margin-right: 38px;
 }
 
 label[for="k-qty"]{
@@ -396,7 +397,7 @@ label[for="k-qty"]{
   background-color: #f2f2f2;
   outline: none;
   border: none;
-  padding: 8px 13px;
+  padding: 6px 13px;
 }
 
 .date .input-date{
@@ -439,68 +440,76 @@ label[for="k-qty"]{
 }
 
 .icon-minus{
-  position: relative;
-}
-
-.icon-minus::before{
-  content: "";
   position: absolute;
-  left: 120px;
-  top: -7px;
   background-image: url("../img/sprite.png") ;
   background-repeat: no-repeat;
-  width: 12px;
-  height: 3px;
-  background-position: -528px -10px;
+  width: 38px;
+  height: 38px;
+  background-position: -518px 7px;
   cursor: pointer;
+  left: 110px;
+  top: 0;
+  background-color: #f2f2f2;
 }
 
-.icon-minus-k::before{
-  left: 126px;
+.icon-minus-k{
+  left: 114px;
+  background-position: -517px 7px;
+
 }
 
-.icon-minus:hover::before{
-  width: 12px;
-  height: 3px;
-  background-position: -592px -10px;
+.icon-minus:hover{
+  background-position: -582px 7px;
 }
 
-.icon-minus:active::before{
-  width: 12px;
-  height: 3px;
-  background-position: -560px -10px;
+.icon-minus-k:hover{
+  background-position: -581px 7px;
+}
+
+.icon-minus:active{
+  background-position: -550px 7px;
+}
+
+.icon-minus-k:active{
+  background-position: -549px 7px;
 }
 
 .icon-plus{
-  position: relative;
-}
-
-.icon-plus::before{
-  content: "";
   position: absolute;
-  left: -24px;
-  top: -11px;
+  left: 186px;
+  top: 0;
   background-image: url("../img/sprite.png") ;
   background-repeat: no-repeat;
-  width: 11px;
-  height: 11px;
-  background-position: -624px -10px;
+  width: 38px;
+  height: 38px;
+  background-position: -613px 3px;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
-.icon-plus:hover::before{
-  width: 11px;
-  height: 11px;
-  background-position: -686px -10px;
+.icon-plus-k{
+  background-position: -611px 3px;
+  left: 187px;
 }
 
-.icon-plus:active::before{
-  width: 11px;
-  height: 11px;
-  background-position: -655px -10px;
+.icon-plus:hover{
+  background-position: -675px 3px;
+}
+
+.icon-plus-k:hover{
+  background-position: -673px 3px;
+}
+
+.icon-plus:active{
+  background-position: -644px 3px;
+}
+
+.icon-plus-k:active{
+  background-position: -642px 3px;
 }
 
 .btn-search{
+  margin-top: 25px;
   padding: 17px 196px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
@@ -589,7 +598,7 @@ label[for="k-qty"]{
   font-size: 0;
   width: 46px;
   height: 48px;
-  margin: 0 6px;
+  margin: 0;
   vertical-align: top;
   background-color: #81b3d2;
   position: relative;
@@ -666,7 +675,7 @@ label[for="k-qty"]{
 .filter-content{
   position: relative;
   line-height: 0;
-  margin-bottom: 42px; /* 34px; */
+  margin-bottom: 38px; /* 34px; */
   padding-left: 42px;
   cursor: pointer;
 }
@@ -819,7 +828,7 @@ input[type="checkbox"]:checked:disabled + .chbx{
 .btn-transparent{
     display: block;
     margin: 0 auto;
-    padding: 4px 35px;
+    padding: 6px 35px;
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -961,7 +970,7 @@ input[type="checkbox"]:checked:disabled + .chbx{
 }
 
 .hotels-item{
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding-top: 30px;
   padding-bottom: 30px;
 }
