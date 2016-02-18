@@ -284,6 +284,8 @@ height: auto;
 .search{
   position: relative;
   text-align: center;
+  background-color: white;
+  z-index: 2;
 }
 
 .search b{
@@ -302,6 +304,7 @@ height: auto;
 }
 
 .btn{
+  display: block;
   display: inline-block;
   padding: 8px 17px;
   font-weight: bold;
@@ -358,6 +361,22 @@ height: auto;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+  z-index: 1;
+  display: none;
+}
+
+@keyframes downhill{
+  0%{
+    transform: translateY(-280px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+
+.modal-content-show{
+  display: block;
+	animation: downhill 700ms;
 }
 
 .date{
@@ -455,7 +474,6 @@ label[for="k-qty"]{
 .icon-minus-k{
   left: 114px;
   background-position: -517px 7px;
-
 }
 
 .icon-minus:hover{
@@ -489,7 +507,7 @@ label[for="k-qty"]{
 
 .icon-plus-k{
   background-position: -611px 3px;
-  left: 187px;
+  left: 191px;
 }
 
 .icon-plus:hover{
