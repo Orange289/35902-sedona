@@ -161,6 +161,7 @@ height: auto;
 
 .reasons-image .reasons-num{
   display: inline-block;
+  vertical-align: top;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -282,7 +283,6 @@ height: auto;
 .map{
   line-height: 0;
   background: #d9c9bf url("../img/map.jpg") no-repeat;
-/*  background-image: url("../img/map.jpg");*/
   width: 1200px;
   height: 593px;
 }
@@ -298,6 +298,7 @@ height: auto;
 
 .search b{
   display: inline-block;
+  vertical-align: top;
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
@@ -341,6 +342,7 @@ height: auto;
 
 .open-search{
   display: inline-block;
+  vertical-align: top;
   margin-top: 45px;
   padding: 30px 139px;
   font-size: 21px;
@@ -610,6 +612,7 @@ label[for="k-qty"]{
 
 .footer-copyright span{
   display: inline-block;
+  vertical-align: top;
   margin-left: 93px;
   margin-top: 8px;
   margin-bottom: 4px;
@@ -1052,6 +1055,7 @@ input[type="checkbox"]:checked:disabled + .chbx{
 
 .text-hotel, .text-price{
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 16px;
 }
 
