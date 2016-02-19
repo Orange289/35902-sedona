@@ -58,7 +58,7 @@ height: auto;
 
 .main-navigation ul{
   margin: 0;
-  padding:0;
+  padding: 0;
   list-style: none;
 }
 
@@ -281,7 +281,8 @@ height: auto;
 
 .map{
   line-height: 0;
-  background-image: url("../img/map.jpg") no-repeat;
+  background: #d9c9bf url("../img/map.jpg") no-repeat;
+/*  background-image: url("../img/map.jpg");*/
   width: 1200px;
   height: 593px;
 }
@@ -374,12 +375,24 @@ height: auto;
   display: none;
 }
 
-@keyframes downhill{
+@-webkit-keyframes downhill{
   0%{
-    transform: translateY(-280px);
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
   }
   100%{
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes downhill{
+  0%{
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -686,7 +699,7 @@ label[for="k-qty"]{
 /*filter*/
 
 .filter{
-  padding: 30px 0;
+  padding: 26px 0;
   background: #9fb9d3 url("../img/bg-inner.jpg") no-repeat 0 -50px ;
 }
 
@@ -713,7 +726,7 @@ label[for="k-qty"]{
 .filter-content{
   position: relative;
   line-height: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   padding-left: 42px;
   cursor: pointer;
 }
@@ -892,8 +905,8 @@ input[type="checkbox"]:checked:disabled + .chbx{
 
 .sort-container{
   max-width: 1054px;
-  padding-top: 30px;
-  padding-bottom: 29px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
