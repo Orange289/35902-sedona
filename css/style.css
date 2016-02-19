@@ -53,7 +53,7 @@ height: auto;
 
 .main-navigation{
   min-height: 56px;
-  padding:0 6%;
+  padding: 0 6%;
 }
 
 .main-navigation ul{
@@ -213,7 +213,7 @@ height: auto;
 
 .reasons .reasons-num{
   display: inline;
-  position:relative;
+  position: relative;
   margin: 0;
   background-color: #eeeeee;
 }
@@ -277,6 +277,13 @@ height: auto;
   margin-left: 47px;
   margin-right: 47px;
   margin-bottom: 83px;
+}
+
+.map{
+  line-height: 0;
+  background-image: url("../img/map.jpg") no-repeat;
+  width: 1200px;
+  height: 593px;
 }
 
 /*search*/
@@ -349,15 +356,17 @@ height: auto;
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*search-form*/
+
 .search-form{
   padding: 0;
   width: 458px;
-  position:absolute;
+  position: absolute;
   left: 50%;
   background-color: #ffffff;
   padding: 55px;
   margin-left: -285px;
-  box-shadow: 0 1px 15px 2px rgba(223 223 223 0.3);
+  box-shadow: 0 1px 15px 2px rgba(223, 223, 223, 0.3);
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -370,7 +379,7 @@ height: auto;
     transform: translateY(-280px);
   }
   100%{
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -417,10 +426,19 @@ label[for="k-qty"]{
   outline: none;
   border: none;
   padding: 6px 13px;
+  min-height: 26px;
+}
+
+::-ms-clear {
+	display: none;
 }
 
 .date .input-date{
   width: 319px;
+}
+
+.date .input-date[name="departure-date"]{
+  margin-left: -3px;
 }
 
 .qty .input-qty{
@@ -431,6 +449,7 @@ label[for="k-qty"]{
 
 .icon-calendar{
   position: relative;
+  cursor: pointer;
 }
 
 .icon-calendar::before{
@@ -443,7 +462,6 @@ label[for="k-qty"]{
   width: 22px;
   height: 22px;
   background-position: -105px -10px;
-  cursor: pointer;
 }
 
 .icon-calendar:hover::before{
@@ -460,7 +478,7 @@ label[for="k-qty"]{
 
 .icon-minus{
   position: absolute;
-  background-image: url("../img/sprite.png") ;
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 38px;
   height: 38px;
@@ -496,7 +514,7 @@ label[for="k-qty"]{
   position: absolute;
   left: 186px;
   top: 0;
-  background-image: url("../img/sprite.png") ;
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 38px;
   height: 38px;
@@ -571,9 +589,9 @@ label[for="k-qty"]{
 }
 
 .footer-copyright{
-  float:left;
+  float: left;
   width: 400px;
-  position:relative;
+  position: relative;
   font-size: 0;
 }
 
@@ -665,6 +683,8 @@ label[for="k-qty"]{
   background-color: #ffffff;
 }
 
+/*filter*/
+
 .filter{
   padding: 26px 0;
   background: #9fb9d3 url("../img/bg-inner.jpg") no-repeat 0 -50px ;
@@ -677,7 +697,7 @@ label[for="k-qty"]{
 }
 
 .filter-item{
-  display:inline-block;
+  display: inline-block;
   vertical-align: top;
   margin-right: 115px;
   color: #ffffff;
@@ -693,7 +713,7 @@ label[for="k-qty"]{
 .filter-content{
   position: relative;
   line-height: 0;
-  margin-bottom: 38px; /* 34px; */
+  margin-bottom: 38px;
   padding-left: 42px;
   cursor: pointer;
 }
@@ -864,6 +884,8 @@ input[type="checkbox"]:checked:disabled + .chbx{
   background: #ffffff;
 }
 
+/*sorting*/
+
 .sorting{
   border-bottom: 1px solid #e5e5e5;
 }
@@ -955,7 +977,7 @@ input[type="checkbox"]:checked:disabled + .chbx{
 
 .down{
   position: absolute;
-  top:5px;
+  top: 5px;
   left: 25px;
   width: 0;
   height: 0;
@@ -988,6 +1010,8 @@ input[type="checkbox"]:checked:disabled + .chbx{
   border-color: #81b3d2 transparent transparent transparent;
 }
 
+/*hotels-item*/
+
 .hotels-item{
   border-bottom: 1px solid #e5e5e5;
   padding-top: 30px;
@@ -995,14 +1019,14 @@ input[type="checkbox"]:checked:disabled + .chbx{
 }
 
 .hotels-img{
-  float:left;
+  float: left;
   width: 135px;
   height: 90px;
   background-color: #fec7dc;
 }
 
 .hotels-details{
-   float:left;
+   float: left;
    max-width: 780px;
    margin-left: 30px;
    font-size: 0;
