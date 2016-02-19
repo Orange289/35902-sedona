@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrilli" rel="stylesheet" type="text/css">
     <base href="https://htmlacademy-htmlcss.github.io/35902-sedona/6/">
 </head>
   <body>
@@ -86,10 +86,10 @@
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки,<br>
              и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <a class="btn open-search" href="#">Поиск гостиницы в Седоне</a>
+          <a class="btn open-search" href="search-form.html">Поиск гостиницы в Седоне</a>
         </section>
         <div class="search-form">
-          <form action="javascript:void(0)">
+          <form action="">
             <div class="date">
               <label for="ar-date">Дата заезда:</label>
               <input class="input-date" type="text" name="arrival-date" id="ar-date" value="24 апреля 2016">
@@ -132,31 +132,6 @@
         </section>
       </footer>
     </div>
-    <script>
-      var link = document.querySelector(".open-search");
-      var popup = document.querySelector(".search-form");
-      var form = popup.querySelector("form");
-      var adQty = document.querySelector("[name=adults-qty]");
-      var kQty = document.querySelector("[name=kids-qty]");
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.toggle("modal-content-show");
-      });
-      form.addEventListener("submit", function(event) {
-       event.preventDefault();
-       if ((!adQty.value && !kQty.value) || (adQty.value == "0" && kQty.value == "0") || (adQty.value == "0" && !kQty.value) || (!adQty.value && kQty.value == "0")) {
-          event.preventDefault();
-          console.log("Нужно ввести количество взрослых и/или детей");
-          alert("Нужно ввести количество взрослых и/или детей");
-        }
-      });
-      window.addEventListener("keydown", function(event) {
-       if (event.keyCode == 27) {
-         if (popup.classList.contains("modal-content-show")) {
-           popup.classList.remove("modal-content-show");
-         }
-       }
-     });
-    </script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
