@@ -1105,7 +1105,7 @@ input[type="checkbox"]:checked:disabled + .chbx::before{
 /*sprite*/
 
 .sprite {
-    background-image: url(../img/sprite.png);
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     display: block;
 }
