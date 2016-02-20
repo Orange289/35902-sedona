@@ -247,7 +247,7 @@ height: auto;
   background: url("../img/sprite.png") no-repeat;
   width: 75px;
   height: 72px;
-  background-position: -10px -10px;
+  background-position: -409px -10px;
 }
 
 .without-num:nth-child(2)::before{
@@ -258,7 +258,7 @@ height: auto;
   background: url("../img/sprite.png") no-repeat;
   width: 74px;
   height: 70px;
-  background-position: -350px -10px;
+  background-position: -749px -10px;
 }
 
 .without-num:nth-child(3)::before{
@@ -269,7 +269,7 @@ height: auto;
   background: url("../img/sprite.png") no-repeat;
   width: 64px;
   height: 76px;
-  background-position: -444px -10px;
+  background-position: -843px -10px;
 }
 
 .without-num p{
@@ -474,21 +474,21 @@ label[for="k-qty"]{
   top: -16px;
   background-image: url("../img/sprite.png") ;
   background-repeat: no-repeat;
-  width: 22px;
+  width: 21px;
   height: 22px;
-  background-position: -105px -10px;
+  background-position: -504px -10px;
 }
 
 .icon-calendar:hover::before{
   width: 22px;
   height: 22px;
-  background-position: -187px -10px;
+  background-position: -586px -10px;
 }
 
 .icon-calendar:active::before{
-  width: 22px;
+  width: 21px;
   height: 22px;
-  background-position: -146px -10px;
+  background-position: -545px -10px;
 }
 
 .icon-minus{
@@ -497,7 +497,7 @@ label[for="k-qty"]{
   background-repeat: no-repeat;
   width: 38px;
   height: 38px;
-  background-position: -518px 7px;
+  background-position: -915px 8px;
   cursor: pointer;
   left: 110px;
   top: 0;
@@ -506,23 +506,14 @@ label[for="k-qty"]{
 
 .icon-minus-k{
   left: 114px;
-  background-position: -517px 7px;
 }
 
 .icon-minus:hover{
-  background-position: -582px 7px;
-}
-
-.icon-minus-k:hover{
-  background-position: -581px 7px;
+  background-position: -979px 8px;
 }
 
 .icon-minus:active{
-  background-position: -550px 7px;
-}
-
-.icon-minus-k:active{
-  background-position: -549px 7px;
+  background-position: -947px 8px;
 }
 
 .icon-plus{
@@ -533,30 +524,21 @@ label[for="k-qty"]{
   background-repeat: no-repeat;
   width: 38px;
   height: 38px;
-  background-position: -613px 3px;
+  background-position: -1010px 4px;
   cursor: pointer;
   background-color: #f2f2f2;
 }
 
 .icon-plus-k{
-  background-position: -611px 3px;
   left: 191px;
 }
 
 .icon-plus:hover{
-  background-position: -675px 3px;
-}
-
-.icon-plus-k:hover{
-  background-position: -673px 3px;
+  background-position: -1072px 4px;
 }
 
 .icon-plus:active{
-  background-position: -644px 3px;
-}
-
-.icon-plus-k:active{
-  background-position: -642px 3px;
+  background-position: -1041px 4px;
 }
 
 .btn-search{
@@ -572,7 +554,6 @@ label[for="k-qty"]{
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 /*footer*/
 
@@ -632,17 +613,22 @@ label[for="k-qty"]{
   position:absolute;
   top: 5px;
   left: 184px;
-  background: url("../img/academy.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 113px;
   height: 39px;
+  background-position: -10px -10px;
 }
 
 .academy:hover.academy::before{
-  background: url("../img/academy-hvr.png") no-repeat;
+  width: 113px;
+  height: 39px;
+  background-position: -276px -10px;
 }
 
 .academy:active.academy::before{
-  background: url("../img/academy-down.png") no-repeat;
+  width: 113px;
+  height: 39px;
+  background-position: -143px -10px;
 }
 
 .social-btn{
@@ -676,19 +662,19 @@ label[for="k-qty"]{
 .social-btn-tw::before{
   width: 17px;
   height: 15px;
-  background-position: -717px -10px;
+  background-position: -1116px -10px;
 }
 
 .social-btn-fb::before{
   width: 10px;
   height: 19px;
-  background-position: -320px -10px;
+  background-position: -719px -10px;
 }
 
 .social-btn-yt::before{
   width: 20px;
   height: 16px;
-  background-position: -754px -10px;
+  background-position: -1153px -10px;
 }
 
 /* ------------------------------- inner.html--------------------------------*/
@@ -734,6 +720,11 @@ label[for="k-qty"]{
   cursor: pointer;
 }
 
+.filter-content .chbx{
+  position: relative;
+  cursor: pointer;
+}
+
 .filter-content:nth-child(4n){
   margin-bottom: 0;
 }
@@ -742,10 +733,11 @@ input[type="checkbox"]{
   display: none;
 }
 
-input[type="checkbox"] + .chbx{
+input[type="checkbox"] + .chbx::before{
+  content: "";
   position: absolute;
-  left: 0;
-  top: -11px;
+  left: -42px;
+  top: -3px;
   width: 17px;
   height: 16px;
   border: 2px solid #ffffff;
@@ -753,29 +745,30 @@ input[type="checkbox"] + .chbx{
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + .chbx{
+input[type="checkbox"]:checked + .chbx::before{
+  content: "";
   border: none;
   position: absolute;
-  left: -1px;
-  top: -12px;
+  left: -43px;
+  top: -4px;
   background: url("../img/sprite.png") no-repeat;
   width: 26px;
   height: 22px;
-  background-position: -228px -10px;
+  background-position: -627px -10px;
   cursor: pointer;
 }
 
-input[type="checkbox"]:disabled + .chbx{
+input[type="checkbox"]:disabled + .chbx::before{
   border: 2px solid #6a6a6a;
   cursor: auto;
 }
 
-input[type="checkbox"]:checked:disabled + .chbx{
+input[type="checkbox"]:checked:disabled + .chbx::before{
   border: none;
   background: url("../img/sprite.png") no-repeat;
   width: 26px;
   height: 22px;
-  background-position: -274px -10px;
+  background-position: -673px -10px;
   cursor: auto;
 }
 
@@ -1112,109 +1105,127 @@ input[type="checkbox"]:checked:disabled + .chbx{
 /*sprite*/
 
 .sprite {
-    background-image: url("../img/sprite.png");
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
+}
+
+.sprite-academy {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -10px;
+}
+
+.sprite-academy-down {
+    width: 113px;
+    height: 39px;
+    background-position: -143px -10px;
+}
+
+.sprite-academy-hvr {
+    width: 113px;
+    height: 39px;
+    background-position: -276px -10px;
 }
 
 .sprite-icon-accomodation {
     width: 75px;
     height: 72px;
-    background-position: -10px -10px;
+    background-position: -409px -10px;
 }
 
 .sprite-icon-calendar {
-    width: 22px;
+    width: 21px;
     height: 22px;
-    background-position: -105px -10px;
+    background-position: -504px -10px;
 }
 
 .sprite-icon-calendar-down {
-    width: 22px;
+    width: 21px;
     height: 22px;
-    background-position: -146px -10px;
+    background-position: -545px -10px;
 }
 
 .sprite-icon-calendar-hvr {
-    width: 22px;
+    width: 21px;
     height: 22px;
-    background-position: -187px -10px;
+    background-position: -586px -10px;
 }
 
 .sprite-icon-chbx {
     width: 26px;
     height: 22px;
-    background-position: -228px -10px;
+    background-position: -627px -10px;
 }
 
 .sprite-icon-chbx-disabled {
     width: 26px;
     height: 22px;
-    background-position: -274px -10px;
+    background-position: -673px -10px;
 }
 
 .sprite-icon-fb {
     width: 10px;
     height: 19px;
-    background-position: -320px -10px;
+    background-position: -719px -10px;
 }
 
 .sprite-icon-food {
     width: 74px;
     height: 70px;
-    background-position: -350px -10px;
+    background-position: -749px -10px;
 }
 
 .sprite-icon-gifts {
     width: 64px;
     height: 76px;
-    background-position: -444px -10px;
+    background-position: -843px -10px;
 }
 
 .sprite-icon-minus {
     width: 12px;
     height: 3px;
-    background-position: -528px -10px;
+    background-position: -927px -10px;
 }
 
 .sprite-icon-minus-down {
     width: 12px;
     height: 3px;
-    background-position: -560px -10px;
+    background-position: -959px -10px;
 }
 
 .sprite-icon-minus-hvr {
     width: 12px;
     height: 3px;
-    background-position: -592px -10px;
+    background-position: -991px -10px;
 }
 
 .sprite-icon-plus {
     width: 11px;
     height: 11px;
-    background-position: -624px -10px;
+    background-position: -1023px -10px;
 }
 
 .sprite-icon-plus-down {
     width: 11px;
     height: 11px;
-    background-position: -655px -10px;
+    background-position: -1054px -10px;
 }
 
 .sprite-icon-plus-hvr {
     width: 11px;
     height: 11px;
-    background-position: -686px -10px;
+    background-position: -1085px -10px;
 }
 
 .sprite-icon-tw {
     width: 17px;
     height: 15px;
-    background-position: -717px -10px;
+    background-position: -1116px -10px;
 }
 
 .sprite-icon-yt {
     width: 20px;
     height: 16px;
-    background-position: -754px -10px;
+    background-position: -1153px -10px;
 }
