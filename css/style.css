@@ -145,6 +145,7 @@ height: auto;
 }
 
 /*причины с картинками*/
+
 .reasons-image{
   float: left;
   width: 408px;
@@ -200,6 +201,7 @@ height: auto;
 
 .reasons-text{
   font-size: 0;
+  background-color: #eeeeee;
 }
 
 .reasons{
@@ -655,7 +657,8 @@ label[for="k-qty"]{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: url("../img/sprite.png") no-repeat;
 }
 
@@ -725,8 +728,8 @@ label[for="k-qty"]{
   cursor: pointer;
 }
 
-.filter-content:nth-child(4n){
-  margin-bottom: 0;
+.filter-content:last-child{
+  margin-bottom: 11px;
 }
 
 input[type="checkbox"]{
@@ -824,7 +827,8 @@ input[type="checkbox"]:checked:disabled + .chbx::before{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 2px;
   height: 22px;
   background: #ffffff;
