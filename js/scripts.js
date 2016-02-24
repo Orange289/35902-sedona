@@ -22,3 +22,17 @@ window.addEventListener("keydown", function(event) {
    }
  }
 });
+
+function initialize() {
+  var mapOptions = {
+    zoom: 14,
+    center: new google.maps.LatLng(34.8620703,-111.7922727)
+  }
+  var map = new google.maps.Map(document.getElementById('link-map'),mapOptions);
+  var myLatLng = new google.maps.LatLng(34.8694804,-111.7631847);
+  var myMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
