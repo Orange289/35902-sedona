@@ -32,8 +32,8 @@ h2{
 }
 
 img{
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /*header*/
@@ -315,7 +315,6 @@ height: auto;
 }
 
 .btn{
-  display: block;
   display: inline-block;
   padding: 8px 17px;
   font-weight: bold;
